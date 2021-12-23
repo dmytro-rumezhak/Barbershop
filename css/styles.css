@@ -1,0 +1,131 @@
+/* Оголошення змінних */
+:root {
+  --accent-color: #ff6c00;
+  --text-color-bg-light: #555555;
+  --text-color-bg-dark: #9da4bd;
+  --subtitle-color: #303030;
+  --title-color: #303030;
+  --icon-color: #303030;
+  --bg-color: #ffffff;
+  --bg-selected-color: #f7f7f7;
+  --bg-contacts-color: #191c26;
+  --white-color: #ffffff;
+}
+
+/* Скидання стилів браузера */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li {
+  margin: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  cursor: pointer;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+}
+
+/* Стилізація header */
+.header {
+  background-color: green;
+}
+
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+  outline: 1px solid red;
+}
+
+.header > .container {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo {
+  margin-right: 70px;
+}
+.header-nav {
+}
+.header-nav-list {
+  display: flex;
+}
+.header-nav-item:not(:last-child) {
+  margin-right: 40px;
+}
+.header-nav-link,
+.header-contacts-link {
+  display: block;
+  padding-top: 48px;
+  padding-bottom: 48px;
+
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.3333;
+  letter-spacing: 0.1em;
+  color: var(--white-color);
+}
+.header-nav-link:hover,
+.header-nav-link:focus,
+.header-contacts-link:hover,
+.header-contacts-link:focus {
+  color: var(--accent-color);
+}
+
+.header-contacts {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+.header-contacts-link {
+  margin-right: 40px;
+}
+.btn {
+  min-width: 160px;
+  min-height: 40px;
+  padding: 12px;
+
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33333;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--white-color);
+
+  background-color: transparent;
+  border: 1px solid var(--accent-color);
+  border-radius: 25px;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: var(--accent-color);
+  border: transparent;
+}
