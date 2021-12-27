@@ -22,10 +22,13 @@
   </head>
   <body>
     <!-- HEADER -->
-    <header class="header">
+    <header class="header header-scroll">
       <div class="container">
         <a href="./" class="header-logo">
-          <img src="./images/logo.svg" alt="Лого сайта" />
+          <!-- <img src="./images/logo.svg" alt="Лого сайта" /> -->
+          <svg class="header-logo-icon header-logo-icon-scroll">
+            <use href="./images/icons.svg#logo" class="svg"></use>
+          </svg>
         </a>
         <nav class="header-nav">
           <ul class="header-nav-list">
@@ -46,12 +49,12 @@
       <!-- HERO -->
       <section class="hero">
         <div class="container">
-          <ul class="hero-social-list">
-            <li class="hero-social-item">
-              <a href="https://www.instagram.com/" class="hero-social-link">Instagram</a>
+          <ul class="social-list hero-social-list">
+            <li class="social-item">
+              <a href="https://www.instagram.com/" class="social-link">Instagram</a>
             </li>
-            <li class="hero-social-item">
-              <a href="https://www.youtube.com/" class="hero-social-link">Youtube</a>
+            <li class="social-item">
+              <a href="https://www.youtube.com/" class="social-link">Youtube</a>
             </li>
           </ul>
           <div class="hero-container-right">
@@ -105,36 +108,44 @@
             <ul class="price-list price-list-left">
               <li class="price-item">
                 <p class="price-item-desc">Мужская стрижка</p>
+                <span class="price-item-line"></span>
                 <p class="price-item-desc">от 300 грн.</p>
               </li>
               <li class="price-item">
                 <p class="price-item-desc">Стрижка бороды</p>
+                <span class="price-item-line"></span>
                 <p class="price-item-desc">от 200 грн.</p>
               </li>
               <li class="price-item">
                 <p class="price-item-desc">Стрижка усов</p>
+                <span class="price-item-line"></span>
                 <p class="price-item-desc">от 200 грн.</p>
               </li>
               <li class="price-item">
                 <p class="price-item-desc">Бритье опасной бритвой</p>
+                <span class="price-item-line"></span>
                 <p class="price-item-desc">от 200 грн.</p>
               </li>
             </ul>
             <ul class="price-list price-list-right">
               <li class="price-item">
                 <p class="price-item-desc">Cтрижка у стажера</p>
+                <span class="price-item-line"></span>
                 <p class="price-item-desc">от 50 грн.</p>
               </li>
               <li class="price-item">
                 <p class="price-item-desc">Стрижка под насадку</p>
+                <span class="price-item-line"></span>
                 <p class="price-item-desc">от 200 грн.</p>
               </li>
               <li class="price-item">
                 <p class="price-item-desc">Детская стрижка (до 12 лет)</p>
+                <span class="price-item-line"></span>
                 <p class="price-item-desc">от 300 грн.</p>
               </li>
               <li class="price-item">
                 <p class="price-item-desc">Камуфлирование седины</p>
+                <span class="price-item-line"></span>
                 <p class="price-item-desc">от 200 грн.</p>
               </li>
             </ul>
@@ -324,6 +335,82 @@
           </ul>
         </div>
       </section>
+
+      <!-- CONTACTS -->
+      <section class="section contacts">
+        <div class="container">
+          <div class="contacts-form-container">
+            <h2 class="section-title contacts-title">Онлайн-запись</h2>
+            <form class="contacts-form">
+              <label class="form-label left">
+                <input type="text" name="name" class="form-input" />
+              </label>
+              <label class="form-label right">
+                <input type="tel" name="tel" class="form-input" />
+              </label>
+              <textarea name="coment" rows="5" class="form-textarea"></textarea>
+              <button type="submit" class="btn btn-contacts">отправить</button>
+            </form>
+          </div>
+          <div class="contacts-container">
+            <h2 class="section-title contacts-title">Контакты</h2>
+            <address class="contacts-address">
+              <ul class="contacts-address-list">
+                <li class="contacts-address-item">
+                  <a href="https://g.page/tamerbarbershop?share" class="contacts-address-link top">
+                    <svg class="contacts-address-icon" width="24" height="24">
+                      <use href="./images/icons.svg#icon-map-pin"></use>
+                    </svg>
+                    <p>
+                      ул. Васильковая, 7А <br />
+                      Киев, 08132
+                    </p>
+                  </a>
+                </li>
+                <li class="contacts-address-item">
+                  <a href="tel:+380441111111" class="contacts-address-link">
+                    <svg class="contacts-address-icon" width="24" height="24">
+                      <use href="./images/icons.svg#icon-phone"></use>
+                    </svg>
+                    +38 044 111 11 11
+                  </a>
+                </li>
+                <li class="contacts-address-item">
+                  <a href="mailto:barbershop@email.com" class="contacts-address-link">
+                    <svg class="contacts-address-icon" width="24" height="24">
+                      <use href="./images/icons.svg#icon-mail"></use>
+                    </svg>
+                    barbershop@email.com
+                  </a>
+                </li>
+              </ul>
+            </address>
+            <p class="subtitle subtitle-dark">время работы</p>
+            <p class="contacts-works-time">Ежедневно с 9:00 до 22:00</p>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <!-- FOOTER -->
+    <section class="footer-section">
+      <div class="container">
+        <p class="footer-copyright">&#169; Copyright 2020</p>
+        <ul class="social-list footer-social-list">
+          <li class="social-item">
+            <a href="https://www.instagram.com/" class="social-link footer-social-link"
+              >Instagram</a
+            >
+          </li>
+          <li class="social-item">
+            <a href="https://www.youtube.com/" class="social-link footer-social-link">Youtube</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./js/menu-scroll.js"></script>
   </body>
 </html>
