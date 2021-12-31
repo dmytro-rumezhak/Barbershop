@@ -631,13 +631,17 @@ textarea::placeholder {
 }
 
 .form-input:focus-within,
-.form-textarea:focus-within {
+.form-textarea:focus-within,
+.form-input:hover::placeholder,
+.form-textarea:hover::placeholder {
   outline: none;
   border-color: var(--white-color);
   color: var(--white-color);
 }
 
 .form-input:not(:placeholder-shown),
+.form-input:hover::placeholder,
+.form-textarea:hover::placeholder,
 .form-textarea:not(:placeholder-shown) {
   border-color: var(--white-color);
   color: var(--white-color);
