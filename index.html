@@ -87,11 +87,13 @@
               src="./images/top-barbershop/top-barbershop-img1.jpg"
               alt="Пенка для бритья"
               width="270"
+              height="445"
             />
             <img
               src="./images/top-barbershop/top-barbershop-img2.jpg"
               alt="Процесс горения"
               width="270"
+              height="445"
             />
           </div>
           <div class="about-right-container">
@@ -162,7 +164,7 @@
               </li>
             </ul>
           </div>
-          <button class="btn">онлайн-запись</button>
+          <button class="btn btn-price">онлайн-запись</button>
         </div>
       </section>
 
@@ -217,7 +219,12 @@
           <h2 class="section-title masters-title">Наши мастера</h2>
           <ul class="masters-list">
             <li class="masters-item">
-              <img src="./images/masters/john-smith.jpg" alt="John Smith" width="370" />
+              <img
+                src="./images/masters/john-smith.jpg"
+                alt="John Smith"
+                width="370"
+                height="346"
+              />
               <p class="masters-item-name" lang="en">John Smith</p>
               <p class="masters-item-specialty" lang="en">Extreme Barber</p>
               <ul class="masters-social-list">
@@ -252,7 +259,12 @@
               </ul>
             </li>
             <li class="masters-item">
-              <img src="./images/masters/michele-doe.jpg" alt="Michele Doe" width="370" />
+              <img
+                src="./images/masters/michele-doe.jpg"
+                alt="Michele Doe"
+                width="370"
+                height="346"
+              />
               <p class="masters-item-name" lang="en">Michele Doe</p>
               <p class="masters-item-specialty" lang="en">Extreme Barber</p>
               <ul class="masters-social-list">
@@ -287,7 +299,12 @@
               </ul>
             </li>
             <li class="masters-item">
-              <img src="./images/masters/alan-black.jpg" alt="Alan Black" width="370" />
+              <img
+                src="./images/masters/alan-black.jpg"
+                alt="Alan Black"
+                width="370"
+                height="346"
+              />
               <p class="masters-item-name" lang="en">Alan Black</p>
               <p class="masters-item-specialty" lang="en">Extreme Barber</p>
               <ul class="masters-social-list">
@@ -333,16 +350,36 @@
           </p>
           <ul class="gallery-list">
             <li class="gallery-item">
-              <img src="./images/rectangle/rectangle-1.jpg" alt="rectangle-1" width="270" />
+              <img
+                src="./images/rectangle/rectangle-1.jpg"
+                alt="rectangle-1"
+                width="270"
+                height="360"
+              />
             </li>
             <li class="gallery-item">
-              <img src="./images/rectangle/rectangle-2.jpg" alt="rectangle-2" width="270" />
+              <img
+                src="./images/rectangle/rectangle-2.jpg"
+                alt="rectangle-2"
+                width="270"
+                height="360"
+              />
             </li>
             <li class="gallery-item">
-              <img src="./images/rectangle/rectangle-3.jpg" alt="rectangle-3" width="270" />
+              <img
+                src="./images/rectangle/rectangle-3.jpg"
+                alt="rectangle-3"
+                width="270"
+                height="360"
+              />
             </li>
             <li class="gallery-item">
-              <img src="./images/rectangle/rectangle-4.jpg" alt="rectangle-4" width="270" />
+              <img
+                src="./images/rectangle/rectangle-4.jpg"
+                alt="rectangle-4"
+                width="270"
+                height="360"
+              />
             </li>
           </ul>
         </div>
@@ -354,14 +391,21 @@
           <div class="contacts-form-container">
             <h2 class="section-title contacts-title">Онлайн-запись</h2>
             <form class="contacts-form">
-              <label class="form-label left">
-                <input type="text" name="name" class="form-input" />
-              </label>
-              <label class="form-label right">
-                <input type="tel" name="tel" class="form-input" />
-              </label>
-              <textarea name="coment" rows="5" class="form-textarea"></textarea>
-              <button type="submit" class="btn btn-contacts">отправить</button>
+              <div class="form-cont">
+                <label class="form-label">
+                  <input type="text" name="name" class="form-input left" placeholder="Имя*" />
+                </label>
+                <label class="form-label">
+                  <input type="tel" name="tel" class="form-input right" placeholder="Телефон*" />
+                </label>
+              </div>
+              <textarea
+                name="coment"
+                rows="5"
+                class="form-textarea"
+                placeholder="сообщение"
+              ></textarea>
+              <button type="submit" class="btn">отправить</button>
             </form>
           </div>
           <div class="contacts-container">

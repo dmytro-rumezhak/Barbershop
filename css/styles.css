@@ -363,13 +363,8 @@ body {
   background-size: 1280px;
 }
 
-.price > .container {
-  text-align: center;
-}
 .price-title {
   margin-bottom: 44px;
-  text-align: left;
-
   color: var(--white-color);
 }
 .price-container {
@@ -410,6 +405,11 @@ body {
 
 .price-item-desc {
   color: var(--text-color-bg-dark);
+}
+
+.btn-price {
+  display: block;
+  margin: 0 auto;
 }
 
 /* --------------------- REASONS ----------------------- */
@@ -579,11 +579,11 @@ body {
 .contacts {
   max-width: 1280px;
   margin: 0 auto;
+  background-color: var(--bg-contacts-color);
   background-image: url('../images/bg/bg-contacts.png');
   background-repeat: no-repeat;
   background-position: right;
   background-size: 625px;
-  background-color: var(--bg-contacts-color);
 }
 
 .contacts > .container {
@@ -602,26 +602,61 @@ body {
 
 .contacts-form {
   width: 100%;
+  margin: 0;
 }
 
-.form-label {
-  border: transparent;
+.form-cont {
+  display: flex;
+  margin-bottom: 44px;
 }
 
-.left {
+.form-input,
+.form-textarea {
+  padding-bottom: 8px;
+
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.37;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: rgba(157, 164, 189, 0.4);
+}
+
+.form-input:focus-within,
+.form-textarea:focus-within {
+  outline: none;
+  border-color: var(--white-color);
+  color: var(--white-color);
+}
+
+.form-input:not(:placeholder-shown),
+.form-textarea:not(:placeholder-shown) {
+  border-color: var(--white-color);
+  color: var(--white-color);
+}
+
+.form-input.left {
   width: 270px;
+  margin-right: 30px;
 }
 
-.right {
+.form-input.right {
   width: 260px;
 }
 
 .form-textarea {
+  display: block;
   width: 100%;
-  border: none;
-}
-.btn-contacts {
-  align-self: flex-start;
+  margin-bottom: 44px;
+  resize: none;
 }
 
 .contacts-container > .contacts-title {
