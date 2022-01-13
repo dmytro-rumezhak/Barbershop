@@ -241,10 +241,13 @@ body {
 .social-list {
   display: flex;
   align-items: center;
+  font-size: 11px;
 }
 
 .hero-container-left {
-  max-width: 70px;
+  display: flex;
+  align-items: center;
+  width: 70px;
   margin-right: 23px;
   transform: rotate(-90deg);
 }
@@ -265,7 +268,6 @@ body {
 }
 
 .social-link {
-  display: block;
   padding-top: 28px;
   padding-bottom: 28px;
 
