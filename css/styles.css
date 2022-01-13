@@ -243,8 +243,8 @@ body {
   align-items: center;
 }
 
-.hero-social-list {
-  width: 70px;
+.hero-container-left {
+  max-width: 70px;
   margin-right: 23px;
   transform: rotate(-90deg);
 }
@@ -272,6 +272,7 @@ body {
   font-weight: 600;
   font-size: 11px;
   line-height: 1.37;
+  letter-spacing: 0.2em;
 
   color: var(--title-color);
 
